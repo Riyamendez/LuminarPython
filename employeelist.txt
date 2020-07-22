@@ -1,0 +1,13 @@
+create database luminar;
+show databases;
+use luminar;
+create table employeelist(eid int(10),ename varchar(20),edesig varchar(20),mailid varchar(25),salary int(10));
+desc employeelist;
+insert into employeelist(id,name,desig,mailid,salary) values(100,"jhon","testing","jhon@gmail.com",15000);
+insert into employeelist(id,name,desig,mailid,salary) values(101,"ann","developer","ann@gmail.com",16000);
+insert into employeelist(id,name,desig,mailid,salary) values(102,"tom","testing","tom@gmail.com",15000);
+insert into employeelist(id,name,desig,mailid,salary) values(103,"tom","testing","danie@gmail",15000);
+select * from employeelist;
+select edesign, count(*) from employeelist group by edesign
+
+
